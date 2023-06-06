@@ -13,15 +13,15 @@ optional arguments:
   
   -m M          The file containing the mutations, the position of the mutations and the output values. (default: None)
   
-  -a A          Row name of the activity. (default: Percentage of Reads GFP High over High and Low)
+  -a A          Column name of the activity. (default: Percentage of Reads GFP High over High and Low)
   
-  -p P          Row name of the position. (default: Position)
+  -p P          Column name of the position. (default: Position)
   
-  -v V          Row name of the Variant ID. (default: #Variant ID)
+  -v V          Column name of the Variant ID. (default: #Variant ID)
   
   -bt BT        Barcode Count threshold. (default: 5)
   
-  -bc BC        Row name of the Barcode Count. (default: None)
+  -bc BC        Column name of the Barcode Count. (default: None)
   
   -epoch EPOCH  The number of epochs. (default: 200)
   
