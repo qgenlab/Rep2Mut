@@ -86,7 +86,7 @@ if __name__=='__main__':
     mut_dict_p = mut_p.read_signle_mut()        
     
     
-    model_p = get_res(args.save, args.s, mut_dict,args.n,torch.device("cuda:"+args.gpu if torch.cuda.is_available() else "cpu"),args.save)
+    model_p = get_res(args.m, args.s, mut_dict,args.n,torch.device("cuda:"+args.gpu if torch.cuda.is_available() else "cpu"),args.save)
     
     df = pd.DataFrame()
     for e in range(n_folds):
