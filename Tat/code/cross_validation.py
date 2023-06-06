@@ -47,7 +47,7 @@ if __name__=='__main__':
                                      help="Barcode Count threshold. ");
     parser.add_argument("-bc", type=str, 
                                      help="Column name of the Barcode Count.");
-    parser.add_argument("-epoch", type=int, default=200, 
+    parser.add_argument("-epoch", type=int, default=2, 
                                      help="The number of epochs. ");
     parser.add_argument("-gpu", type=str, default="0",
                                      help="The device to use to train the model. ");
