@@ -38,7 +38,7 @@ optional arguments:
 
 ### Example
 
-```python train.py -s data/TatOnlyProt.fa -n Tat -m goldenStandarddataIncHet.csv```
+```python train.py -s data/TatOnlyProt.fa -n Tat -m data/goldenStandarddataIncHet.csv -bc ' Barcode Count'```
 
 # Predict the output:
 ```
@@ -84,6 +84,6 @@ optional arguments:
   -f F          The number of folds. (default: 10)
 ```
 ### Example
-```python cross_validation.py -s TatOnlyProt.fa -n Tat -m goldenStandarddataIncHet.csv -bc ' Barcode Count' ```
+```python cross_validation.py -s data/TatOnlyProt.fa -n Tat -m data/goldenStandarddataIncHet.csv -bc ' Barcode Count' ```
 
 

@@ -10,15 +10,11 @@ We recommend you to build a python virtual environment with Anaconda. Also, if y
 ### Activate the created environment
 `conda activate py39Rep2Mut`
 
-### Install the other required packages
-`conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia`
-
-
-`pip install fair-esm`
 ## 
 
 ## Reference
 
 Derbel, Houssemeddine, et al. "Accurate prediction of transcriptional activity of single missense variants in HIV Tat with deep learning." International Journal of Molecular Sciences 24.7 (2023): 6138.
 
-Derbel, Houssemeddine, et al. "Accurate prediction of functional effect of single missense variants with deep learning". (Accepted)
+Derbel, Houssemeddine, et al. "Accurate prediction of functional effect of single missense variants with deep learning". (Accepted by ICIBM 2023)
+
