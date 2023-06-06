@@ -119,9 +119,9 @@ if __name__=='__main__':
     parser.add_argument("-m", type=str, 
                                      help="The file containing the mutations, the position of the mutations.");
     parser.add_argument("-p", type=str, default=' Position', 
-                                     help="Row name of the position. ");
+                                     help="Column name of the position. ");
     parser.add_argument("-v", type=str, default='#Variant ID', 
-                                     help="Row name of the Variant ID.");
+                                     help="Column name of the Variant ID.");
     parser.add_argument("-gpu", type=str, default="0",
                                      help="The device to use to train the model. ");
     parser.add_argument("-save", type=str, default="./0.csv", 

@@ -38,7 +38,7 @@ optional arguments:
 
 ### Example
 
-```python train.py -s data/TatOnlyProt.fa -n Tat -m data/goldenStandarddataIncHet.csv -bc ' Barcode Count'```
+```python Tat/code/train.py -s Tat/data/TatOnlyProt.fa -n Tat -m Tat/data/goldenStandarddataIncHet.csv -bc ' Barcode Count'```
 
 # Predict the output:
 ```
@@ -50,13 +50,13 @@ optional arguments:
   -model MODEL  The model. (default: None)
   -n N          The name of the protein sequence in the file. (default: None)
   -m M          The file containing the mutations, the position of the mutations. (default: None)
-  -p P          Row name of the position. (default: Position)
-  -v V          Row name of the Variant ID. (default: #Variant ID)
+  -p P          Column name of the position. (default: Position)
+  -v V          Column name of the Variant ID. (default: #Variant ID)
   -gpu GPU      The device to use to train the model. (default: 0)
   -save SAVE    The output file. (default: ./0.csv)
 ```
 ### Example
-```python code/predict.py -s data/TatOnlyProt.fa -model Rep2Mut.p -n Tat -m data/goldenStandarddataIncHet.csv -model Rep2Mut.p```
+```python Tat/code/predict.py -s Tat/data/TatOnlyProt.fa -model Rep2Mut.p -n Tat -m Tat/data/goldenStandarddataIncHet.csv -model Rep2Mut.p```
 
 # Cross validation:
 
@@ -71,11 +71,11 @@ optional arguments:
   -s S          The file containing the protein sequence. (default: None)
   -n N          The name of the protein sequence in the file. (default: None)
   -m M          The file containing the mutations, the position of the mutations and the output values. (default: None)
-  -a A          Row name of the activity. (default: Percentage of Reads GFP High over High and Low)
-  -p P          Row name of the position. (default: Position)
-  -v V          Row name of the Variant ID. (default: #Variant ID)
+  -a A          Column name of the activity. (default: Percentage of Reads GFP High over High and Low)
+  -p P          Column name of the position. (default: Position)
+  -v V          Column name of the Variant ID. (default: #Variant ID)
   -bt BT        Barcode Count threshold. (default: 5)
-  -bc BC        Row name of the Barcode Count. (default: None)
+  -bc BC        Column name of the Barcode Count. (default: None)
   -epoch EPOCH  The number of epochs. (default: 200)
   -gpu GPU      The device to use to train the model. (default: 0)
   -lr1 LR1      The learning rate of the task specific layer. (default: 0.001)
@@ -84,6 +84,6 @@ optional arguments:
   -f F          The number of folds. (default: 10)
 ```
 ### Example
-```python cross_validation.py -s data/TatOnlyProt.fa -n Tat -m data/goldenStandarddataIncHet.csv -bc ' Barcode Count' ```
+```python Tat/code/cross_validation.py -s Tat/data/TatOnlyProt.fa -n Tat -m Tat/data/goldenStandarddataIncHet.csv -bc ' Barcode Count' ```
 
 

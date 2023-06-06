@@ -38,15 +38,15 @@ if __name__=='__main__':
     parser.add_argument("-m", type=str, 
                                      help="The file containing the mutations, the position of the mutations and the output values.");
     parser.add_argument("-a", type=str, default= ' Percentage of Reads GFP High over High and Low', 
-                                     help="Row name of the activity. ");
+                                     help="Column name of the activity. ");
     parser.add_argument("-p", type=str, default=' Position', 
-                                     help="Row name of the position. ");
+                                     help="Column name of the position. ");
     parser.add_argument("-v", type=str, default='#Variant ID', 
-                                     help="Row name of the Variant ID.");
+                                     help="Column name of the Variant ID.");
     parser.add_argument("-bt", type=int, default=5, 
                                      help="Barcode Count threshold. ");
     parser.add_argument("-bc", type=str, 
-                                     help="Row name of the Barcode Count.");
+                                     help="Column name of the Barcode Count.");
     parser.add_argument("-epoch", type=int, default=200, 
                                      help="The number of epochs. ");
     parser.add_argument("-gpu", type=str, default="0",
