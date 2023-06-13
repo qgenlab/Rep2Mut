@@ -88,10 +88,10 @@ class train_model:
             mut_det.append(self.seq[self.seq_n][mut_pos_list[_iseq_ind]]+str(mut_pos_list[_iseq_ind])+_iseq[mut_pos_list[_iseq_ind]])
             pos_list[-1][mut_pos_list[_iseq_ind]] = 1;
         self.train_data = (seq_repr_wt_list, seq_repr_mt_list, single_mut_act_list, pos_list, mut_det)
-    def load_model(self, f = "/mnt/analysis/derbelh/ProtMut_prediction_private-master/General_prediction/code/product/product_2.p"):
+    def load_model(self, f):
         self.model = Rep2Mut(1280, [self.seq_n])
         self.model = self.model.to(self.device)
-        self.model.load_state_dict(torch.load(f), strict=False)
+        if f != None: self.model.load_state_dict(torch.load(f), strict=False)
     def train(self):
         random_seed = 4
         g_adam_betas=(0.9,0.999)
@@ -167,6 +167,8 @@ if __name__=='__main__':
                                      help="The batch size. ");
     parser.add_argument("-save", type=str, default="./Rep2Mut.p", 
                                      help="The save folder. ");
+    parser.add_argument("-l", type=str, default=None, 
+                                     help="Path to the pretrained model. ");
   
     args = parser.parse_args()
         
@@ -187,6 +189,6 @@ if __name__=='__main__':
                         args.save,
                        )
     model.get_esm_vectors()
-    model.load_model()
+    model.load_model(args.l)
     model.train()
     model.save()
