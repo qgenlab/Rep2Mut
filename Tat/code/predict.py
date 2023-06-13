@@ -112,7 +112,7 @@ if __name__=='__main__':
 
     parser.add_argument("-s", type=str, 
                                      help="The file containing the protein sequence. ")
-    parser.add_argument("-model", type=str, default='/mnt/analysis/derbelh/ProtMut_prediction_private-master/General_prediction/code/product/product_2.p',
+    parser.add_argument("-model", type=str, default='./product_2.p',
                                      help="The model. ");
     parser.add_argument("-n", type=str, 
                                      help="The name of the protein sequence in the file. ");
