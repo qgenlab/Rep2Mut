@@ -1,3 +1,9 @@
+# Get the dataset
+```
+chmod +x ./get_data.sh
+./get_data.sh
+```
+
 
 # Generate ESM vectors
 
