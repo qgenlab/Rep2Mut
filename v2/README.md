@@ -24,7 +24,7 @@ optional arguments:
 ### Example
 
 ```
-python generate_vectors.py -s sequence_v2.txt -f dataset_to_seq.xlsx -m data/NIHMS1014772-supplement-Supplemental_2.xlsx
+python generate_vectors.py -s data/sequence_v2.txt -f data/dataset_to_seq.xlsx -m data/NIHMS1014772-supplement-Supplemental_2.xlsx
 ```
 
 # Train the model
@@ -46,7 +46,7 @@ optional arguments:
 ### Example
 
 ```
-rep2mut_v2.py train -d SUMO1_HUMAN_Roth2017 -save save.pt
+python rep2mut_v2.py train -d SUMO1_HUMAN_Roth2017 -save save.pt
 ```
 
 # Test the model
@@ -60,5 +60,5 @@ rep2mut_v2.py train -d SUMO1_HUMAN_Roth2017 -save save.pt
 ### Example
 
 ```
-python rep2mut_v2.py test -m ./Rep2Mut.p
+python rep2mut_v2.py test -m ./Vectors.p
 ```
