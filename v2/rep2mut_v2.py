@@ -167,7 +167,7 @@ def Train_mut(act_net2, data_train, epoch, lr1, lr2, batch, save):
 			loss.backward()
 			adam_optmizer2.step()
 			losses2 += loss
-		print("Trainng loss = ", losses2/num_train_i)
+		print("Training loss = ", losses2/num_train_i)
 		epochi1 += 1
 	torch.save(act_net2.state_dict(), save)
 
