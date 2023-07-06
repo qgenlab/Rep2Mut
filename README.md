@@ -1,4 +1,4 @@
-# Rep2Mut
+# Rep2Mut-V2: Accurate prediction of functional effect of single missense variants with deep learning
 This repository includes the implementation of Rep2Mut: “Accurate Prediction of Transcriptional Activity of Single Missense Variants in HIV Tat with Deep Learning” and Rep2Mut-V2:” Accurate prediction of functional effect of single missense variants with deep learning”. Please cite our papers if you use the models or codes. In this package, we provides resources including: source codes of the Rep2Mut model, source codes of the Rep2Mut-V2 model, and usage examples. 
 
 ## Environment setup
