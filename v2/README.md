@@ -60,5 +60,5 @@ python rep2mut_v2.py train -d SUMO1_HUMAN_Roth2017 -save save.pt
 ### Example
 
 ```
-python rep2mut_v2.py test -m ./Vectors.p
+python rep2mut_v2.py test -m ./vectors.p
 ```
