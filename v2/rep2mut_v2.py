@@ -223,7 +223,7 @@ if __name__=='__main__':
   
   device = torch.device("cuda:"+args.gpu if torch.cuda.is_available() else "cpu")
   
-  vectors = pickle.load(open("./vectors.p","rb"))
+  vectors = pickle.load(open(args.p","rb"))
   if args.command  == 'train':
     if args.d == None: datasets = vectors
     else: datasets = {args.d : vectors[args.d]}
