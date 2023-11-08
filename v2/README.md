@@ -3,7 +3,8 @@
 chmod +x ./get_data.sh
 ./get_data.sh
 ```
-
+# Training time and minimun requirement
+Training the model requires a GPU with a minimum of 1GB of memory. Please check the minimum requirements on PyTorch's website [here](https://pytorch.org/get-started/locally/). The time needed to train the model using a single dataset ranges from 1 minute for YAP1 (our smallest dataset) to 13 minutes for BF520 (our largest dataset). On average, it takes approximately 8 minutes to generate the esm vectors for one dataset, although generating vectors for all datasets took 5 hours. Pretraining the model on the fitness dataset took around 4 minutes, while pretraining it on all available datasets took 80 minutes
 
 # Generate ESM vectors
 
