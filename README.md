@@ -10,6 +10,9 @@ We recommend you to build a python virtual environment with Anaconda. Also, if y
 ### Activate the created environment
 `conda activate py39Rep2Mut`
 
+### Rep2mut-v2
+Please check the different steps as well as the minimum requirements [here](https://github.com/qgenlab/Rep2Mut/tree/main/v2).
+
 ## 
 
 ## Reference
