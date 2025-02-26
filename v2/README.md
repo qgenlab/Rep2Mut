@@ -25,7 +25,7 @@ optional arguments:
 ### Example
 
 ```
-python generate_vectors.py -s data/sequence_v2.txt -f data/dataset_to_seq.xlsx -m data/NIHMS1014772-supplement-Supplemental_2.xlsx
+python generate_vectors.py -s data/sequence_v2.txt -f data/dataset_to_seq.xlsx -m data/41592_2018_138_MOESM4_ESM.xlsx
 ```
 
 # Train the model
